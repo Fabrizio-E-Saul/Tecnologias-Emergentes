@@ -1,0 +1,82 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "API de Predicci\u00f3n de Lluvia en Huancayo",
+    "description": "API basada en Flask para predecir si llover\u00e1 ma\u00f1ana en base a datos climatol\u00f3gicos de hoy.",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/predecir": {
+      "post": {
+        "summary": "Predice si llover\u00e1 ma\u00f1ana",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "temp_max": {
+                    "type": "number",
+                    "example": 18.5
+                  },
+                  "temp_min": {
+                    "type": "number",
+                    "example": 4.2
+                  },
+                  "viento_max": {
+                    "type": "number",
+                    "example": 12.0
+                  }
+                },
+                "required": [
+                  "temp_max",
+                  "temp_min",
+                  "viento_max"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Predicci\u00f3n exitosa",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "prediccion": {
+                      "type": "string",
+                      "example": "lluvia"
+                    },
+                    "probabilidad": {
+                      "type": "number",
+                      "example": 0.5378
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Petici\u00f3n inv\u00e1lida o faltan par\u00e1metros",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string",
+                      "example": "Falta el par\u00e1metro requerido: temp_min"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

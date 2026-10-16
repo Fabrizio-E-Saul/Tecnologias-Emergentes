@@ -1,0 +1,16 @@
+$kind: http-request
+name: POST /predecir — solicitud válida
+description: "Caso exitoso: mismo resultado que en Flask, porque ambas APIs sirven el mismo modelo. Respuesta esperada: 200 OK."
+url: http://{{host}}:{{puerto_fastapi}}/predecir
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "temp_max": 18.5,
+      "temp_min": 4.2,
+      "viento_max": 12.0
+    }
+order: 1000

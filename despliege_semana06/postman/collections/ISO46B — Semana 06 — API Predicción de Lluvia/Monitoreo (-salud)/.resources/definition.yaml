@@ -1,0 +1,4 @@
+$kind: collection
+name: Monitoreo (/salud)
+description: Endpoint de salud, presente en ambas implementaciones (criterio 'Destacado' de la rúbrica).
+order: 3000

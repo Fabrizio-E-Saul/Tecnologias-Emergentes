@@ -1,0 +1,3 @@
+$kind: collection
+description: "Endpoints de la API construida con FastAPI en Despliegue_Aplicado_Paso_a_Paso.ipynb (api_fastapi.py). Antes de ejecutar estas solicitudes, levanta el servidor con: uvicorn api_fastapi:app --port 8000 (o ejecuta la celda correspondiente del notebook)."
+order: 2000

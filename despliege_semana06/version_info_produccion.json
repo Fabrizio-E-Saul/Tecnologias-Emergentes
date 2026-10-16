@@ -1,0 +1,21 @@
+{
+  "version": "v2",
+  "archivo_modelo": "modelo_lluvia_v2_20261012_1938.keras",
+  "fecha_entrenamiento": "20261012_1938",
+  "caracteristicas": [
+    "temp_max",
+    "temp_min",
+    "viento_max"
+  ],
+  "hiperparametros": {
+    "unidades_ocultas": 24,
+    "epochs": 60,
+    "batch_size": 16
+  },
+  "metricas": {
+    "accuracy": 0.8395061728395061,
+    "precision_clase_1": 0.84,
+    "recall_clase_1": 0.984375,
+    "f1_clase_1": 0.9064748201438849
+  }
+}

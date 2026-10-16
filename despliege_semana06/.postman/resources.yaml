@@ -1,0 +1,14 @@
+# Use this workspace to collaborate
+workspace:
+  id: 833a9d70-0931-40f1-8cbf-e08b02591a8c
+
+localResources:
+  collections: []
+  specs:
+    - ../openapi.json
+
+# Each entry here maps a local resource to one or more corresponding objects in Postman Cloud
+
+cloudResources:
+  collections:
+    ../postman/collections/ISO46B — Semana 06 — API Predicción de Lluvia: f912f628-d4b1-4aa4-afbe-4e93fadb3e0c

@@ -1,0 +1,14 @@
+$kind: http-request
+name: POST /predecir — campo faltante (error 422 automático)
+description: "Caso de error: FastAPI valida el cuerpo contra el modelo pydantic 'DatosClima' automáticamente -sin código manual de validación-. Respuesta esperada: 422 Unprocessable Entity, con el detalle de qué campo falta generado por FastAPI."
+url: http://{{host}}:{{puerto_fastapi}}/predecir
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "temp_max": 18.5
+    }
+order: 2000

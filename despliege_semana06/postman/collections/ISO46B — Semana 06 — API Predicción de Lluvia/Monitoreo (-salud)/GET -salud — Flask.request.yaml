@@ -1,0 +1,6 @@
+$kind: http-request
+name: GET /salud — Flask
+description: 'Respuesta esperada: 200 OK, {"estado": "ok", "modelo_cargado": true}.'
+url: http://{{host}}:{{puerto_flask}}/salud
+method: GET
+order: 1000

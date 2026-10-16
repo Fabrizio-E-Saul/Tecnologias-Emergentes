@@ -1,0 +1,14 @@
+$kind: http-request
+name: POST /predecir — campo faltante (error 400)
+description: "Caso de error: faltan 'temp_min' y 'viento_max'. Respuesta esperada: 400 Bad Request con un mensaje de error describiendo las características faltantes (manejo manual de errores, a diferencia de la validación automática de FastAPI)."
+url: http://{{host}}:{{puerto_flask}}/predecir
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "temp_max": 18.5
+    }
+order: 2000

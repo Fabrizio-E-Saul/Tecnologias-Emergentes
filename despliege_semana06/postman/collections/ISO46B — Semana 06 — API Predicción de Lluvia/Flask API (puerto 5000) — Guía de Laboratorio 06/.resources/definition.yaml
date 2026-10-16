@@ -1,0 +1,3 @@
+$kind: collection
+description: "Endpoints de la API construida en la Guía de Laboratorio 06 (api.py). Antes de ejecutar estas solicitudes, levanta el servidor con: python api.py"
+order: 1000

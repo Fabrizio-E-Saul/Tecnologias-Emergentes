@@ -1,0 +1,6 @@
+$kind: http-request
+name: GET /salud — FastAPI
+description: 'Respuesta esperada: 200 OK, {"estado": "ok", "modelo_cargado": true}.'
+url: http://{{host}}:{{puerto_fastapi}}/salud
+method: GET
+order: 2000

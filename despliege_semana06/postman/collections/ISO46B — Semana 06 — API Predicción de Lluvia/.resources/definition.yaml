@@ -1,0 +1,6 @@
+$kind: collection
+description: Colección de evidencia de despliegue para la Semana 06 (Tecnologías Emergentes). Incluye las dos implementaciones enseñadas en el curso -Flask (manejo manual de errores) y FastAPI (validación automática con pydantic)- más el endpoint de monitoreo /salud. Usa las variables de colección para cambiar host/puertos sin editar cada solicitud.
+variables:
+  host: 127.0.0.1
+  puerto_flask: "5000"
+  puerto_fastapi: "8000"

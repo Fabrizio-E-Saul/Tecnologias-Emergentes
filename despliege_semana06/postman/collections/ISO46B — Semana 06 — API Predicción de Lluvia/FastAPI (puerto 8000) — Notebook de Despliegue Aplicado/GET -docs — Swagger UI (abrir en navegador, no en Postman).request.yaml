@@ -1,0 +1,6 @@
+$kind: http-request
+name: GET /docs — Swagger UI (abrir en navegador, no en Postman)
+description: FastAPI genera esta interfaz interactiva automáticamente a partir del esquema OpenAPI (ver openapi.json). Mejor abrirla directamente en el navegador.
+url: http://{{host}}:{{puerto_fastapi}}/docs
+method: GET
+order: 4000

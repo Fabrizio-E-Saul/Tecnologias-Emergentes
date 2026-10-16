@@ -1,0 +1,9 @@
+$kind: http-request
+name: POST /predecir — cuerpo vacío (error 400)
+description: "Caso de error: cuerpo JSON vacío. Respuesta esperada: 400 Bad Request."
+url: http://{{host}}:{{puerto_flask}}/predecir
+method: POST
+body:
+  type: text
+  content: "{}"
+order: 3000
